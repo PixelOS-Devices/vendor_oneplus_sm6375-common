@@ -68,6 +68,7 @@ ________________________________________________________________________________
                 <Prop Name="ro.lmk.enable_preferred_apps"   Value="true" />
                 <!-- <Prop Name="ro.lmk.use_new_strategy_dup" Value="true" /> -->
 		<Prop Name="ro.lmk.super_critical" Value="701" />
+		<Prop Name="ro.lmk.enable_uxmem" Value="true" />
                 <Prop Name="vendor.perf.gestureflingboost.enable" Value="true" />
                 <!--#ifndef  OPLUS_FEATURE_PERFORMANCE-->
                 <!--liuyun@ANDROID.PERFORMANCE, 2020/11/02, Modify for cached app limit for 4350R-->
