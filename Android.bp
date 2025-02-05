@@ -15219,8 +15219,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcodec2_hidl_plugin_odm",
-    stem: "libcodec2_hidl_plugin",
+    name: "libcodec2_hidl@1.0_sp",
     owner: "oneplus",
     strip: {
         none: true,
@@ -15228,39 +15227,7 @@ cc_prebuilt_library_shared {
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/odm/lib64/libcodec2_hidl_plugin.so",
-            ],
-            shared_libs: [
-                "libbase",
-                "libcodec2",
-                "libcodec2_vndk_sp",
-                "liblog",
-                "libutils",
-                "libcutils",
-                "libstagefright_foundation",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libcodec2_hidl_sp@1.0_odm",
-    stem: "libcodec2_hidl_sp@1.0",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libcodec2_hidl_sp@1.0.so",
+                "proprietary/odm/lib64/libcodec2_hidl@1.0_sp.so",
             ],
             shared_libs: [
                 "android.hardware.graphics.bufferqueue@1.0",
@@ -15280,7 +15247,38 @@ cc_prebuilt_library_shared {
                 "libui",
                 "libutils",
                 "libstagefright_bufferqueue_helper",
-                "libcodec2_hidl_plugin",
+                "libcodec2_hidl_plugin_sp",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl_plugin_sp",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libcodec2_hidl_plugin_sp.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk_sp",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libstagefright_foundation",
                 "libc++",
                 "libc",
                 "libm",
@@ -15313,7 +15311,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libcodec2",
-                "libcodec2_vndk",
+                "libcodec2_vndk_sp",
                 "libutils",
                 "libcodec2_store_dolby_sp",
                 "libcodec2_soft_common",
@@ -15345,7 +15343,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libcodec2",
-                "libcodec2_vndk",
+                "libcodec2_vndk_sp",
                 "libutils",
                 "libc++",
                 "libc",
@@ -15360,8 +15358,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcodec2_vndk_sp_odm",
-    stem: "libcodec2_vndk_sp",
+    name: "libcodec2_vndk_sp",
     owner: "oneplus",
     strip: {
         none: true,
@@ -15471,8 +15468,7 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libui_sp_odm",
-    stem: "libui_sp",
+    name: "libui_sp",
     owner: "oneplus",
     strip: {
         none: true,
@@ -15486,8 +15482,8 @@ cc_prebuilt_library_shared {
                 "android.hardware.graphics.allocator@2.0",
                 "android.hardware.graphics.allocator@3.0",
                 "android.hardware.graphics.allocator@4.0",
-                "android.hardware.graphics.allocator-V1-ndk",
-                "android.hardware.graphics.common-V3-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.common-V5-ndk",
                 "android.hardware.graphics.common@1.2",
                 "android.hardware.graphics.mapper@2.0",
                 "android.hardware.graphics.mapper@2.1",
@@ -18142,7 +18138,7 @@ cc_prebuilt_binary {
                 "libcodec2_vndk_sp",
                 "libutils",
                 "android.hardware.media.c2@1.0",
-                "libcodec2_hidl_sp@1.0",
+                "libcodec2_hidl@1.0_sp",
                 "libavservices_minijail",
                 "libhidlbase",
                 "libbinder",
