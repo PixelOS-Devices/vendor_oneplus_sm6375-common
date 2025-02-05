@@ -15292,6 +15292,75 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcodec2_soft_ac4dec_sp",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libcodec2_soft_ac4dec_sp.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "vendor.dolby_sp.hardware.dmssp@2.0",
+                "libdeccfg_sp",
+                "libbase",
+                "liblog",
+                "libcodec2",
+                "libcodec2_vndk_sp",
+                "libutils",
+                "libcodec2_store_dolby_sp",
+                "libcodec2_soft_common_sp",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_soft_common_sp",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libcodec2_soft_common_sp.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk_sp",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libsfplugin_ccodec_utils",
+                "libstagefright_foundation",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcodec2_soft_ddpdec_sp",
     owner: "oneplus",
     strip: {
@@ -15314,7 +15383,7 @@ cc_prebuilt_library_shared {
                 "libcodec2_vndk_sp",
                 "libutils",
                 "libcodec2_store_dolby_sp",
-                "libcodec2_soft_common",
+                "libcodec2_soft_common_sp",
                 "libc++",
                 "libc",
                 "libm",

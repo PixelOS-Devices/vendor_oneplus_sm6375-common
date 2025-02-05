@@ -856,6 +856,8 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.stability.oplus_project@1.0 \
     libcodec2_hidl@1.0_sp \
     libcodec2_hidl_plugin_sp \
+    libcodec2_soft_ac4dec_sp \
+    libcodec2_soft_common_sp \
     libcodec2_soft_ddpdec_sp \
     libcodec2_store_dolby_sp \
     libcodec2_vndk_sp \
