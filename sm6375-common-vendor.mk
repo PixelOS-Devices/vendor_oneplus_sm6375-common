@@ -848,15 +848,20 @@ PRODUCT_PACKAGES += \
     libdlbvol_sp \
     libswdap_sp \
     libswgamedap_sp \
+    libswspatializer \
     vendor.dolby_sp.hardware.dmssp@2.0-impl \
     vendor.dolby_sp.hardware.dmssp@2.0 \
     vendor.oplus.hardware.performance-V1-ndk_platform \
     vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform \
     vendor.oplus.hardware.stability.oplus_project@1.0 \
+    libcodec2_hidl_plugin \
+    libcodec2_hidl_sp@1.0_odm \
     libcodec2_soft_ddpdec_sp \
     libcodec2_store_dolby_sp \
+    libcodec2_vndk_sp_odm \
     liboemcrypto \
     liboplus_service \
+    libui_sp_odm \
     libwvhidl \
     libwvdrmengine \
     vendor.oplus.hardware.appradio@1.0 \
