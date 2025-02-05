@@ -15219,7 +15219,8 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcodec2_hidl_plugin",
+    name: "libcodec2_hidl_plugin_odm",
+    stem: "libcodec2_hidl_plugin",
     owner: "oneplus",
     strip: {
         none: true,
@@ -15312,7 +15313,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libcodec2",
-                "libcodec2_vndk_sp",
+                "libcodec2_vndk",
                 "libutils",
                 "libcodec2_store_dolby_sp",
                 "libcodec2_soft_common",
@@ -15344,7 +15345,7 @@ cc_prebuilt_library_shared {
                 "libbase",
                 "liblog",
                 "libcodec2",
-                "libcodec2_vndk_sp",
+                "libcodec2_vndk",
                 "libutils",
                 "libc++",
                 "libc",

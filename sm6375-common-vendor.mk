@@ -854,7 +854,7 @@ PRODUCT_PACKAGES += \
     vendor.oplus.hardware.performance-V1-ndk_platform \
     vendor.oplus.hardware.stability.oplus_project-V1-ndk_platform \
     vendor.oplus.hardware.stability.oplus_project@1.0 \
-    libcodec2_hidl_plugin \
+    libcodec2_hidl_plugin_odm \
     libcodec2_hidl_sp@1.0_odm \
     libcodec2_soft_ddpdec_sp \
     libcodec2_store_dolby_sp \
